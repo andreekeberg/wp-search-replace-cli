@@ -1,6 +1,12 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
+if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    // Require local autoload file
+    require_once __DIR__ . '/../vendor/autoload.php';
+} else if (file_exists(__DIR__ . '/../../../autoload.php')) {
+    // Require global autoload file
+    require_once __DIR__ . '/../../../autoload.php';
+}
 
 // Define script name
 $script = basename($argv[0]);
