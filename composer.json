@@ -1,0 +1,44 @@
+{
+    "name": "andreekeberg/wp-search-replace-cli",
+    "type": "library",
+    "description": "Command line tool to replace serialized strings in WordPress database dump files",
+    "keywords": [
+        "search-replace",
+        "search",
+        "replace",
+        "serialize",
+        "unserialize",
+        "serialized",
+        "wp",
+        "wordpress",
+        "cli",
+        "tool",
+        "sql",
+        "mysql",
+        "database",
+        "export",
+        "import",
+        "dump",
+        "file"
+    ],
+    "homepage": "https://github.com/andreekeberg/wp-search-replace-cli",
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Ekeberg",
+            "email": "hello@andreekeberg.se",
+            "homepage": "https://andreekeberg.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/andreekeberg/wp-search-replace-cli/issues"
+    },
+    "require": {
+        "php": ">=4.0.0",
+        "andreekeberg/serialized-search-replace": "^1.1"
+    },
+    "bin": [
+        "bin/wp-search-replace"
+    ]
+}
